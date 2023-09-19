@@ -6,5 +6,5 @@ app.get("/",(req,res) => {
     res.send("You are on the server");
 
 })
-
-app.listen(1200, () => {console.log("server is running")})
+const port =  process.env.PORT || 1200
+app.listen(port, () => {console.log("server is running")})
